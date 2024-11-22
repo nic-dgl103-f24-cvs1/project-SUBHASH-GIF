@@ -19,7 +19,7 @@
         - **Image:** 
         ![Lentulus Farms](/images/LentulusFarms.png "Lentulus Farms")
 
-     - **2.Lentulus Farms-** This website represent a clean & professional way approach.
+     - **2.Empress Acres-** This website is simple & cool.
         - **URL:** https://empressacres.ca/produce/
         - **Image:** 
         ![Empress Acres](/images/Empress_Acres.png "Empress Acres")
@@ -48,10 +48,9 @@
 
 - Logo
 - Navigation:
-    - Home
-    - Our Gallery
-    - About 
-    - Contact 
+    - What Are We
+    - Farm Stand
+    - Recipies and Tips 
 
 ### **Hero**
 
