@@ -1,0 +1,310 @@
+                                /* css for index.html */
+                                /* Header Section Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ecf87f;
+    z-index: 1000;
+    border-bottom: 2px solid #59981a;
+}
+
+/* Logo Styling */
+.logo_container {
+    display: flex;
+    align-items: center;
+}
+
+.logo_container img {
+    margin-right: 10px;
+}
+
+.logo_container span {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #3d550c;
+}
+
+/* Menu Toggle Icon */
+.menu-toggle-label {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none; /* Hidden by default (desktop view) */
+    color: #3d550c;
+    margin-left: auto;
+}
+
+/* Hidden Checkbox */
+.menu-toggle-checkbox {
+    display: none;
+}
+
+/* Sidebar Menu (Mobile Navigation) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Hidden initially */
+    width: 300px;
+    height: 100%;
+    background-color: #3d550c;
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color:#59981a;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    color: #81b622;
+}
+
+/* Back Button */
+.close-sidebar {
+    font-size: 1.2em;
+    color: #ecf87f;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    background-color: #59981a;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.close-sidebar:hover {
+    background-color: #81b622;
+    color: #ffffff;
+}
+
+/* Overlay for Sidebar */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s;
+    z-index: 999;
+}
+
+/* Checkbox State (Menu Open) */
+.menu-toggle-checkbox:checked ~ .sidebar {
+    right: 0; /* Slide sidebar into view */
+}
+
+.menu-toggle-checkbox:checked ~ .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+                                    /* footer style */
+
+/* Footer Container Styling */
+.footer-container {
+    position: relative;
+    width: 100%;
+    color: #ffffff;
+    background-color: #3d550c; /* Olive Green background for fallback */
+    overflow: hidden; /* Ensure no content overflows */
+}
+
+/* Footer Background Image */
+.footer-container img.footer_background {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding:10px;
+    object-fit: cover; 
+}
+
+/* Overlay Text Styling */
+.footer_textoverlay {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer Text Section */
+.footer-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.footer-text p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-text address { 
+    font-style: normal;   
+}
+
+/* Footer Form Styling */
+.provide_details {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+.provide_details h1{
+    padding-bottom:20px;
+    margin: 20px;
+}
+
+label {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #81b622; /* Lime Green for Submit Button */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #59981a; /* Green on hover */
+}
+
+
+/* mobile Design */
+@media screen and (max-width: 768px) {
+    /* nav bar */
+    .menu-toggle-label {
+        display: block; /* Show menu icon on mobile */
+        margin-left: auto; /* Align to the far right */
+    }
+
+    .sidebar {
+        display: flex;
+    }
+    .sidebar a{
+        color:#ecf87f;
+    }
+    .nav-links {
+        display: block; /* Hide desktop nav-links on mobile */
+    }
+    /* footer */
+    .footer_textoverlay{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .provide_details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* desktop View */
+@media screen and (min-width: 768px) {
+    /* nav */
+    .menu-toggle-label {
+        display: none; /* Hidden on desktop */
+    }
+
+    .sidebar {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        background: none;
+        height: auto;
+        width: auto;
+        right: 0;
+    }
+    .close-sidebar{
+        display: none;
+    }
+
+    .sidebar ul {
+        display: flex;
+    }
+
+    .sidebar li {
+        margin: 0 10px;
+    }
+
+    .overlay {
+        display: none; /* No overlay on desktop */
+    }
+    /* footer */
+    .provide_details{
+        position: relative;
+        align-items:flex-start;
+    }
+    .provide_details h1{
+        margin: 0%;
+        margin-bottom: 20px;
+    }
+}
+
