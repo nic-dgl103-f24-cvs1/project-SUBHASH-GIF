@@ -5,15 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farm Stand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 </head>
-
 <body>
-    <section>
+    <header class="navbar">
+        <div class="logo_container">
+            <img src="images/kehlerVegetable-co.png" alt="logo" class="logo" height="60px">
+            <span>Kehler Vegetable Company</span>
+        </div>
+        <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox" />
+        <label for="menu-toggle-checkbox" class="menu-toggle-label">☰</label>
+        <div class="sidebar">
+            <label for="menu-toggle-checkbox" class="close-sidebar">← Back</label>
+            <ul class="nav-links">
+                <li><a href="index.html">What Are We</a></li>
+                <li><a href="FarmStand.html">Farm Stand</a></li>
+                <li><a href="Recipes.html">Recipes & Tips</a></li>
+            </ul>
+        </div>
+        <div class="overlay"></div>
+    </header>
+    <section class="farmstand-section">
         <h1>OUR FARM STAND</h1>
         <H3>The farmstand runs on the honour system and is stocked up daily right at the farm gate!</H3>
-
-        <Div class="farmstand">
-            <img src="images/farmstand.jpg" alt="farmstand">
+        <img src="images/farmstand.jpg" alt="farmstand">
+        <Div class="farmstand"></Div>
             <h3>Open Hours</h3>
             <P>Hours run seasonally Wed-Fri 10-5pm Saturday 9-noon.</P>
             <H3>Farm Stand Location</H3>
@@ -28,18 +49,17 @@
             </p>
         </Div>
     </section>
-    <section>
+    <section class="reviews-section">
         <h1>REVIEWS</h1>
-        <div>
-        <div>
+        <div class="review-card">
         <img src="images/reviews.jpg">
         <p>And we can attest to the fact that the berries are amazing! Thank you for growing such great berries!</p>
         </div>
-        <div>
+        <div class="review-card">
         <img src="images/reviews1.jpg">
         <p>Every time we drive by we say, There’s the happy chickens living their best life! ♥️ 🐓</p>
         </div>
-        <div>
+        <div class="review-card">
             <img src="images/reviews2.jpg">
             <p>Love this farm! Wonderful fresh fruit and veggies. Blueberries are delicious!❤️❤️❤️</p>
         </div>
@@ -64,7 +84,30 @@
 
         </div>
     </section>
+    <footer class="footer-container">
+        <img calss="footer_background" src="images/home_footer.jpg" alt="footer" height="10px">
+        <div class="footer_textoverlay">
+            <div class="footer-text">
+                <h1>LETS CONNECT</h1>
+                <address>
+                    <p>Email:<br><a href="marlene@empressacres.ca">marlene@empressacres.ca</a></p>
+                    <p>Phone:<br>(250)202-3236</p>
+                    <p>Address:<br>8083 n island highway
+                        black creek bc</p>
+                </address>
+            </div>
+            <form action="submit_form.php" method="post">
+                <label for="name">NAME</label><br>
+                <input type="text" id="name" name="name" required><br><br>
 
+                <label for="Email">EMAIL</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message" id="message">MESSAGE</label><br>
+                <textarea id="message" name="message" rows="4" coloumns="50" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </footer>
 </body>
-
 </html>

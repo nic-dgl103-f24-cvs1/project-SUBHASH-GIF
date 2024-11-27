@@ -5,36 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KehlerFarm</title>
-</head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 
 <body>
-    <header>
-        <img src="images/kehlerVegetable-co.png" alt="logo">
-        <ul>
-            <li>What are We</li>
-            <li>Farm Stand</li>
-            <li>Recipies & Tips</li>
-        </ul>
+    <header class="navbar">
+        <div class="logo_container">
+            <img src="images/kehlerVegetable-co.png" alt="logo" class="logo" height="60px">
+            <span>Kehler Vegetable Company</span>
+        </div>
+        <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox" />
+        <label for="menu-toggle-checkbox" class="menu-toggle-label">☰</label>
+        <div class="sidebar">
+            <label for="menu-toggle-checkbox" class="close-sidebar">← Back</label>
+            <ul class="nav-links">
+                <li><a href="index.html">What Are We</a></li>
+                <li><a href="FarmStand.html">Farm Stand</a></li>
+                <li><a href="Recipes.html">Recipes & Tips</a></li>
+            </ul>
+        </div>
+        <div class="overlay"></div>
     </header>
     <section>
         <div class="vedio_container">
-            <video class="video" src="vedios/Strawbeeries.mp4" autoplay muted controls loop>
+            <video class="video" src="vedios/Strawbeeries.mp4" autoplay muted controls loop height="80px">
                 This vedio is not supported type=Strawberries
             </video>
-            <video class="video" src="vedios/kid.mp4" autoplay muted controls loop>
+            <video class="video" src="vedios/Hens.mp4" autoplay muted controls loop height="80px">
                 This vedio is not supported type=Strawberries
             </video>
-            <video class="video" src="vedios/Hens.mp4" autoplay muted controls loop>
+            <video class="video" src="vedios/kid.mp4" autoplay muted controls loop height="80px">
                 This vedio is not supported type=Strawberries
             </video>
         </div>
-        <div class="text-overlay">
-            <h1>EXPLORE WHAT'S RIPE AND READY AT KEHLER'S FARM</h1>
-            <P>See what's in season and available from the farm today</P>
-            <button>Visit the fresh sheet</button>
+        <div class="hero">
+            <div class="text-overlay">
+                <h1>EXPLORE WHAT'S RIPE AND READY AT KEHLER'S FARM</h1>
+                <P>See what's in season and available from the farm today</P>
+                <button>Visit the fresh sheet</button>
+            </div>
         </div>
     </section>
-    <section>
+    <section class="about-section">
         <h1>HOW WE GROW</h1>
         <P>Our farm runs on a best practice system, we use a combination of management that ensures our produce is the
             highest quality possible. We are not currently certified organic but we do grow all produce and vegetables
@@ -45,59 +61,75 @@
             here by adding well composted cattle manure as well as our own manure produced by our laying hen flock.
             Supplemental organic fertilizer is added as needed to our drip irrigation system throughout the season.</P>
 
-        <img src="images/Hero2.jpeg" alt="pumpkins">
-        <img src="images/Home.jpg" alt="family">
-        <img src="images/Hero1.jpeg" alt="watermelons">
+        <img src="images/Hero2.jpeg" alt="pumpkins" height="10px">
+        <img src="images/Home.jpg" alt="family" height="10px">
+        <img src="images/Hero1.jpeg" alt="watermelons" height="10px">
     </section>
-    <article>
-        <img src="images/Fresh_Produce.jpeg" alt="produce">
+    <section class="product-section"></section>
+    <div class="produce">
+        <img src="images/Fresh_Produce.jpeg" alt="produce" height="10px">
         <p>At Kehler Vegetable Company, we offer fresh, flavorful produce grown sustainably in the Comox Valley. Our
             vegetables, berries, and eggs are harvested at peak ripeness, ensuring maximum flavor and nutrition.
 
             Supporting us means choosing local, high-quality food while promoting sustainable farming. Visit us today
             and taste the difference of truly fresh produce.</p>
-    </article>
-    <article>
-        <img src="images/berries.jpeg" alt="berries">
+    </div>
+
+    <div class="Berries">
+        <img src="images/berries.jpeg" alt="berries" height="10px">
         <p>At Kehler Farm, our berries are lovingly grown in the fertile soils of the Comox Valley. From sweet
-            strawberries to juicy blueberries, each berry is handpicked at the peak of ripeness to ensure maximum flavor
+            strawberries to juicy blueberries, each berry is handpicked at the peak of ripeness to ensure maximum
+            flavor
             and freshness.
 
-            Packed with vitamins and antioxidants, our berries are the perfect addition to any meal or snack. Support
-            local, sustainable farming by choosing our fresh, seasonal berries—taste the difference in every bite.</p>
-    </article>
-    <article>
-        <img src="images/Non_gmo_eggs.jpeg" alt="eggs">
-        <p>At Kehler Farm, we take pride in our non-GMO eggs, laid by hens raised in a natural, healthy environment. Our
-            chickens enjoy a diet free from genetically modified feed, ensuring that every egg is as pure and nutritious
+            Packed with vitamins and antioxidants, our berries are the perfect addition to any meal or snack.
+            Support
+            local, sustainable farming by choosing our fresh, seasonal berries—taste the difference in every bite.
+        </p>
+    </div>
+    <div class="Non_gmo_eggs">
+        <img src="images/Non_gmo_eggs.jpeg" alt="eggs" height="10px">
+        <p>At Kehler Farm, we take pride in our non-GMO eggs, laid by hens raised in a natural, healthy environment.
+            Our
+            chickens enjoy a diet free from genetically modified feed, ensuring that every egg is as pure and
+            nutritious
             as nature intended.
 
             Rich in protein and flavor, our eggs are perfect for any dish. By choosing our non-GMO eggs, you’re
             supporting sustainable farming practices and enjoying a healthier, more wholesome product. Taste the
             difference with every egg from Kehler Farm.</p>
-    </article>
-<footer>
-    <img calss="footer_background" src="images/home_footer.jpg" alt="footer">
-    <div class="footer_textoverlay">
-        <h1>LETS CONNECT</h1>
-        <address>
-            <p>Email:<br><a href="marlene@empressacres.ca">marlene@empressacres.ca</a></p>
-            <p>Phone:<br>(250)202-3236</p>
-            <p>Address:<br>8083 n island highway
-                black creek bc</p>
-        </address>
-        <form action="submit_form.php" method="post">
-            <label for="name">NAME</label><br>
-            <input type="text" id="name"  name="name" required><br><br>
-
-            <label for="Email">EMAIL</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="message" id="message">MESSAGE</label><br>
-            <textarea id="message" name="message" rows="4" coloumns="50" required></textarea><br><br>
-            <input type="submit" value="Submit">
-        </form>
     </div>
-</footer>
+    </section>
+    <footer class="footer-container">
+        <img class="footer_background" src="images/home_footer.jpg" alt="footer">
+        <div class="footer_textoverlay">
+            <div class="footer-text">
+                <h1>LETS CONNECT</h1>
+                <address>
+                    <p>Email:<br><a href="mailto:marlene@empressacres.ca">marlene@empressacres.ca</a></p>
+                    <p>Phone:<br>(250)202-3236</p>
+                    <p>Address:<br>8083 n island highway
+                        black creek bc</p>
+                </address>
+            </div>
+            <div class="provide_details">
+                <h1>Please provide your details to get updates about our products</h1>
+            <form action="submit_form.php" method="post">
+                <label for="name">NAME</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+    
+                <label for="Email">EMAIL</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label for="message" id="message">MESSAGE</label><br>
+                <textarea id="message" name="message" rows="4" coloumns="50" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            </div>
+        </div>
+    </footer>    
+        </div>
+    </footer>
 </body>
+
 </html>
