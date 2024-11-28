@@ -30,27 +30,37 @@
         </div>
         <div class="overlay"></div>
     </header>
-    <section>
-        <div class="vedio_container">
-            <video class="video" src="vedios/Strawbeeries.mp4" autoplay muted controls loop height="80px">
-                This vedio is not supported type=Strawberries
-            </video>
-            <video class="video" src="vedios/Hens.mp4" autoplay muted controls loop height="80px">
-                This vedio is not supported type=Strawberries
-            </video>
-            <video class="video" src="vedios/kid.mp4" autoplay muted controls loop height="80px">
+    <section class="video_container">
+        <div class="video">
+            <video id="video1" src="vedios/Strawbeeries.mp4" autoplay muted loop>
                 This vedio is not supported type=Strawberries
             </video>
         </div>
-        <div class="hero">
-            <div class="text-overlay">
-                <h1>EXPLORE WHAT'S RIPE AND READY AT KEHLER'S FARM</h1>
-                <P>See what's in season and available from the farm today</P>
-                <button>Visit the fresh sheet</button>
-            </div>
+        <div class="video">
+            <video id="video2" src="vedios/Hens.mp4" autoplay muted loop>
+                This vedio is not supported type=Strawberries
+            </video>
+        </div>
+        <div class="video_text-overlay">
+            <h1>EXPLORE WHAT'S RIPE AND READY AT KEHLER'S FARM</h1>
+            <P>See what's in season and available from the farm today</P>
+            <button>Visit the fresh sheet</button>
         </div>
     </section>
+    <div class="mobile_video-container">
+    <div class="video" id="video3">
+        <video src="vedios/kid.mp4" autoplay muted loop>
+            This vedio is not supported type=Strawberries
+        </video>
+    </div>
+    <div class="video_text-overlay-mo">
+        <h1>EXPLORE WHAT'S RIPE AND READY AT KEHLER'S FARM</h1>
+        <P>See what's in season and available from the farm today</P>
+        <button>Visit the fresh sheet</button>
+    </div>
+    </div>
     <section class="about-section">
+        <div class="about">
         <h1>HOW WE GROW</h1>
         <P>Our farm runs on a best practice system, we use a combination of management that ensures our produce is the
             highest quality possible. We are not currently certified organic but we do grow all produce and vegetables
@@ -60,14 +70,19 @@
             rotation plan ensures that we are keeping pests at a minimum from season to season. Fertility is managed
             here by adding well composted cattle manure as well as our own manure produced by our laying hen flock.
             Supplemental organic fertilizer is added as needed to our drip irrigation system throughout the season.</P>
-
-        <img src="images/Hero2.jpeg" alt="pumpkins" height="10px">
-        <img src="images/Home.jpg" alt="family" height="10px">
-        <img src="images/Hero1.jpeg" alt="watermelons" height="10px">
+        </div>
+        <div class="home-images">
+        <div id="align">
+        <img src="images/Hero2.jpeg" alt="pumpkins">
+        <img src="images/Home.jpg" alt="family">
+        </div>
+        <img id="watermelons" src="images/Hero1.jpeg" alt="watermelons" height="280px" width="380px">
+        </div>
     </section>
-    <section class="product-section"></section>
+    <section class="product-section">
     <div class="produce">
-        <img src="images/Fresh_Produce.jpeg" alt="produce" height="10px">
+        <img class="products" src="images/Fresh_Produce.jpeg" alt="produce">
+        <h3>Fresh Produce</h3>
         <p>At Kehler Vegetable Company, we offer fresh, flavorful produce grown sustainably in the Comox Valley. Our
             vegetables, berries, and eggs are harvested at peak ripeness, ensuring maximum flavor and nutrition.
 
@@ -76,7 +91,8 @@
     </div>
 
     <div class="Berries">
-        <img src="images/berries.jpeg" alt="berries" height="10px">
+        <img class="products" src="images/berries.jpeg" alt="berries">
+        <h3>Berries</h3>
         <p>At Kehler Farm, our berries are lovingly grown in the fertile soils of the Comox Valley. From sweet
             strawberries to juicy blueberries, each berry is handpicked at the peak of ripeness to ensure maximum
             flavor
@@ -88,7 +104,8 @@
         </p>
     </div>
     <div class="Non_gmo_eggs">
-        <img src="images/Non_gmo_eggs.jpeg" alt="eggs" height="10px">
+        <img class="products" src="images/Non_gmo_eggs.jpeg" alt="eggs">
+        <h3>Non GMO eggs</h3>
         <p>At Kehler Farm, we take pride in our non-GMO eggs, laid by hens raised in a natural, healthy environment.
             Our
             chickens enjoy a diet free from genetically modified feed, ensuring that every egg is as pure and
@@ -114,21 +131,21 @@
             </div>
             <div class="provide_details">
                 <h1>Please provide your details to get updates about our products</h1>
-            <form action="submit_form.php" method="post">
-                <label for="name">NAME</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-    
-                <label for="Email">EMAIL</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-    
-                <label for="message" id="message">MESSAGE</label><br>
-                <textarea id="message" name="message" rows="4" coloumns="50" required></textarea><br><br>
-                <input type="submit" value="Submit">
-            </form>
+                <form action="submit_form.php" method="post">
+                    <label for="name">NAME</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="Email">EMAIL</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message" id="message">MESSAGE</label><br>
+                    <textarea id="message" name="message" rows="4" coloumns="50" required></textarea><br><br>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
         </div>
-    </footer>    
-        </div>
+    </footer>
+    </div>
     </footer>
 </body>
 
