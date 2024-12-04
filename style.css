@@ -8,6 +8,9 @@
 a{
    color:#ecf87f;
 }
+button{
+    color: #3d550c;
+}
 
 body {
     font-family: 'Lato', sans-serif;
@@ -65,7 +68,8 @@ body {
     right: -300px;
     width: 300px;
     height: 100%;
-    background-color: #3d550c;
+    background:url(/images/berries.jpg);
+    background-size: 1600px;
     transition: right 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -92,7 +96,7 @@ body {
 }
 
 .sidebar a:hover {
-    color: #81b622;
+    color:#3d550c;
 }
 
 /* Back Button */
@@ -107,7 +111,6 @@ body {
     width: 100%;
     text-decoration: none;
 }
-
 .close-sidebar:hover {
     background-color: #81b622;
     color: #ffffff;
@@ -129,7 +132,7 @@ body {
 
 /* Checkbox State (Menu Open) */
 .menu-toggle-checkbox:checked ~ .sidebar {
-    right: 0; /* Slide sidebar into view */
+    right: 0;
 }
 
 .menu-toggle-checkbox:checked ~ .overlay {
@@ -216,10 +219,11 @@ textarea {
 input[type="submit"] {
     padding: 10px;
     background-color: #81b622;
-    color: #ffffff;
+    color:#ecf87f;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -271,16 +275,18 @@ input[type="submit"]:hover {
 .video_text-overlay p{
     font-size: 1.5rem;
 }                           
-.video_text-overlay button {
+.video_text-overlay button{
     background-color: #81b622; 
-    color: white; 
+    color:#ecf87f; 
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     margin: 50px;
 }
+
                                                     /* hero */
 
 .about-section{
@@ -296,13 +302,14 @@ input[type="submit"]:hover {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    margin:20px;
+    margin:40px;
 }
 .about h1{
     padding: 10px;
 }
 .about p{
     padding: 10px;
+    max-width: 1200px;
 }
 .home-images img{
     height:300px;
@@ -318,7 +325,7 @@ input[type="submit"]:hover {
     align-items: center;
     justify-content:center;
 }
-                           /*product section*/
+                            /*product section*/
 .product-section{
     display: flex;
     flex-direction: column;
@@ -341,18 +348,16 @@ input[type="submit"]:hover {
     border:2px solid #3d550c;
     text-align: center;
     width:300px;
-    overflow-y: scroll hidden;
+    overflow-y: scroll;
     height: 600px;
-    overflow-x:hidden ;
-
-    
+    overflow-x:hidden;
 }
 .Berries{
     margin:10px;
     border:2px solid #3d550c;
     text-align: center;
     width:300px;
-    overflow-y: scroll hidden;
+    overflow-y: scroll;
     height: 600px;
     overflow-x: hidden;
 }
@@ -368,6 +373,7 @@ input[type="submit"]:hover {
 .produce p{
     text-align: center;
     margin: 20px;
+    color:#3d550c;
 }
 .produce h3{
     text-align: center;
@@ -377,6 +383,7 @@ input[type="submit"]:hover {
 .Berries p{
     text-align: center;
     margin: 20px;
+    color:#3d550c;
 }
 .Berries h3{
     text-align: center;
@@ -386,6 +393,7 @@ input[type="submit"]:hover {
 .Non_gmo_eggs p{
     text-align: center;
     margin: 20px;
+    color:#3d550c;
 }
 .Non_gmo_eggs h3{
     text-align: center;
@@ -399,13 +407,13 @@ input[type="submit"]:hover {
     margin: 30px;
     background-color:#ecf87f;
     padding: 20px;
+    color:#3d550c;
 }
 .farmstand-hero-header{
     
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: space-between;
     padding: 10px;
 }
 .farmstand-hero-header h1{
@@ -440,6 +448,7 @@ input[type="submit"]:hover {
     margin: 30px;
     text-align: center;
     padding: 10px;
+    color: #3d550c;
 }
 .review-card{
     background-color: #81b622;
@@ -484,6 +493,7 @@ input[type="submit"]:hover {
     margin:30px;
     text-align:center ;
     padding:20px;
+    color: #3d550c;
 }
 .recipies img{
     height:200px;
@@ -538,6 +548,7 @@ input[type="submit"]:hover {
     margin:30px;
     padding:20px;
     text-align: center;
+    color: #3d550c;
 }
 .own-recipe h3{
     padding:10px;
@@ -546,7 +557,39 @@ input[type="submit"]:hover {
     color: #3d550c;
     margin:10px;
 }
-
+/*Farm-fresh sheet*/
+.fresh{
+    background-color: #ecf87f;
+    margin:30px;
+}
+.fresh button{
+    background-color: #81b622;
+    color:#ecf87f;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 50px;
+}
+.fresh table{
+    background-color: #59981a;
+    margin: 0 auto;
+    min-width: 40%;
+    text-align: center;
+    color:#ecf87f;
+    padding:10px;
+    border:4px solid black;
+}
+.fresh table th{
+    padding:35px;
+    border:2px solid black;
+}
+.fresh table td{
+    padding:20px;
+    border:2px solid black; 
+}
                                             /* mobile Design */
 @media screen and (max-width: 768px) {
     /* nav bar */
@@ -648,9 +691,6 @@ input[type="submit"]:hover {
     }
 }
 
-
-
-
                                     /* desktop View */
 @media screen and (min-width: 768px) {
     /* nav */
@@ -741,6 +781,31 @@ input[type="submit"]:hover {
         width: 1000px;
     }
     /*  Recipies & tips */
+    .all-recipe-cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 1200px;
+        padding: 20px;
+        margin:0 auto;
+    }
+    .recipe-card {
+        padding: 20px;
+    }
+    /* tips */
+    .tips{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 1200px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    /*farm fresh sheet*/
+    .fresh table{
+        font-size: 2rem;
+    }
+
 
 
 }
