@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Stand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo_container">
+            <img src="images/kehlerVegetable-co.png" alt="logo" class="logo" height="60">
+            <span>Kehler Vegetable Company</span>
+        </div>
+        <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox" />
+        <label for="menu-toggle-checkbox" class="menu-toggle-label">☰</label>
+        <div class="sidebar">
+            <label for="menu-toggle-checkbox" class="close-sidebar">← Back</label>
+            <ul class="nav-links">
+                <li><a href="index.html">What Are We</a></li>
+                <li><a href="FarmStand.html">Farm Stand</a></li>
+                <li><a href="Recipes.html">Recipes & Tips</a></li>
+            </ul>
+        </div>
+        <div class="overlay"></div>
+    </header>
+    <section class="farmstand-section">
+        <div class="farmstand-hero">
+            <div class="farmstand-hero-header">
+                <h1>OUR FARM STAND</h1>
+                <H2>The farmstand runs on the honour system and is stocked up daily right at the farm gate!</H2>
+            </div>
+            <div class="farmstand">
+                <div id="farmstand"> <img src="images/farmstand.jpg" alt="farmstand"></div>
+                <div id="farmstand-information">
+                    <h3>Open Hours</h3>
+                    <P>Hours run seasonally Wed-Fri 10-5pm Saturday 9-noon.</P>
+                    <H3>Farm Stand Location</H3>
+                    <p>8083 n island highway black creek bc</p>
+                    <h3>What We Supply</h3>
+                    <ul>
+                        <li>Seasonal vegetables</li>
+                        <li>Berries</li>
+                        <li>Free range, pasture raised eggs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews-section">
+        <h1>REVIEWS</h1>
+        <div id="review-cards">
+            <div class="review-card">
+                <img src="images/reviews.jpg" alt="review1" height="60">
+                <hr class="hr">
+                <p>"And we can attest to the fact that the berries are amazing! Thank you for growing such great
+                    berries!"</p>
+            </div>
+            <div class="review-card">
+                <img src="images/reviews1.jpg" alt="review2" height="60">
+                <hr class="hr">
+                <p>"Every time we drive by we say, There’s the happy chickens living their best life! ♥️ 🐓"</p>
+            </div>
+            <div class="review-card">
+                <img src="images/reviews2.jpg" alt="review3" height="60">
+                <hr class="hr">
+                <p>"Love this farm! Wonderful fresh fruit and veggies. Blueberries are delicious!❤️❤️❤️"</p>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <h1>NEED HELP FINDING US</h1>
+        <p>We Are Located in 8083 n island highway black creek bc</p>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.9548666499563!2d-125.12793902395046!3d49.824513471479385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881ba521f0dd49%3A0xb8c066fbd0190296!2sKehler%20Vegetable%20Company!5e0!3m2!1sen!2sca!4v1733290300651!5m2!1sen!2sca"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <footer class="footer-container">
+        <div class="footer_textoverlay">
+            <div class="footer-text">
+                <h1>LETS CONNECT</h1>
+                <address>
+                    <p>Email:<br><a href="marlene@empressacres.ca">marlene@empressacres.ca</a></p>
+                    <p>Phone:<br>(250)202-3236</p>
+                    <p>Address:<br>8083 n island highway
+                        black creek bc</p>
+                </address>
+            </div>
+            <form action="submit_form.php" method="post">
+                <label for="name">NAME</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">EMAIL</label> <br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message" id="Message">MESSAGE</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </footer>
+</body>
+
+</html>
